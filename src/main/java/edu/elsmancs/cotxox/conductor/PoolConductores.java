@@ -11,13 +11,12 @@ public class PoolConductores {
 	}
 	
 	public void asignarConductor() {
-		boolean conductorAsignado = false;
-		int posicion = 0;
-		while (conductorAsignado != true) {
-			if(conductorAsignado == true) {}
-		}
 		for (Conductor conductora : poolConductores) {
-			
+			if(conductora.isOcupado() == false) {
+				conductora.setOcupado(true);
+				break;
+			}else {}
+					
 		}
 	}
 }

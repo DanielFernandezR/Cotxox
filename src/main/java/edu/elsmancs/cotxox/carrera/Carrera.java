@@ -1,6 +1,7 @@
 package edu.elsmancs.cotxox.carrera;
 
 import edu.elsmancs.cotxox.conductor.Conductor;
+import edu.elsmancs.cotxox.conductor.PoolConductores;
 import edu.elsmancs.cotxox.tarifa.Tarifa;;
 
 public class Carrera {
@@ -71,5 +72,9 @@ public class Carrera {
 
 	public double getCosteEsperado() {
 		return Tarifa.getCosteTotalEsperado(this);
+	}
+	
+	public void asignarConductor(PoolConductores conductores) {
+		setConductor(conductores.asignarConductor());
 	}
 }

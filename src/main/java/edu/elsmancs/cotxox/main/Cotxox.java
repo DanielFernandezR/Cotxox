@@ -82,7 +82,7 @@ public class Cotxox {
 
 		PoolConductores conductores = new PoolConductores(poolConductores);
 
-		/* Seleccion del conductor en la flota y asignacion a la carrera 
+		// Seleccion del conductor en la flota y asignacion a la carrera 
 
 		carrera.asignarConductor(conductores);
 
@@ -105,7 +105,7 @@ public class Cotxox {
 
 		System.out.println("\n#####" + "\t Pay and Tip: \t" + "#####\n");
 
-		carrera.realizarPago(carrera.getCosteEsperado());
+		/*carrera.realizarPago(carrera.getCosteEsperado());
 		carrera.recibirPropina(1);
 		carrera.liberarConductor();
 
