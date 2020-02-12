@@ -18,11 +18,11 @@ dependencies {
 }
 
 application {
-    mainClassName = 'edu.elsmancs.cotxox.App'
+    mainClassName = 'edu.elsmancs.cotxox.main.Cotxox'
 }
 
 jar {
     manifest {
-        attributes 'Main-Class' : 'edu.elsmancs.cotxox.App'
+        attributes 'Main-Class' : 'main.Cotxox'
     }
 }

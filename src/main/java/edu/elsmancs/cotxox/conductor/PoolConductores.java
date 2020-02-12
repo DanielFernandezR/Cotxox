@@ -11,10 +11,10 @@ public class PoolConductores {
 	}
 	
 	public void asignarConductor() {
-		boolean conductorAsignado = false
+		boolean conductorAsignado = false;
 		int posicion = 0;
 		while (conductorAsignado != true) {
-			if(poolConductores.)
+			if(conductorAsignado == true) {}
 		}
 		for (Conductor conductora : poolConductores) {
 			

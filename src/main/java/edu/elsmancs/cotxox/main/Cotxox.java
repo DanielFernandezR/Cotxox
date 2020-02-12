@@ -82,7 +82,7 @@ public class Cotxox {
 
 		PoolConductores conductores = new PoolConductores(poolConductores);
 
-		/* Seleccion del conductor en la flota y asignacion a la carrera */
+		/* Seleccion del conductor en la flota y asignacion a la carrera 
 
 		carrera.asignarConductor(conductores);
 
@@ -120,6 +120,6 @@ public class Cotxox {
 		carrera.getConductor().setValoracion((byte) 5);
 
 		System.out.println("Driver: " + carrera.getConductor().getNombre());
-		System.out.println("Stars: " + carrera.getConductor().getValoracion());
+		System.out.println("Stars: " + carrera.getConductor().getValoracion()); */
 	}
 }
