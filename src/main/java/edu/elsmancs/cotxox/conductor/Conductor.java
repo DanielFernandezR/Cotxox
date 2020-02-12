@@ -7,8 +7,8 @@ public class Conductor {
 	private String nombre = null;
 	private String modelo = null;
 	private String matricula = null;
-	private double valoracionMedia = 0.d;
-	private ArrayList<Double> valoraciones = new ArrayList<>();
+	private double valoracionMedia = 0d;
+	private ArrayList<Byte> valoraciones = new ArrayList<>();
 	private boolean ocupado = false;
 	
 	public Conductor(String nombre) {
@@ -39,11 +39,11 @@ public class Conductor {
 		this.matricula = matricula;
 	}
 
-	public double getValoracionMedia() {
+	public double getValoracion() {
 		return valoracionMedia;
 	}
 
-	public void setValoracionMedia(double valoracionMedia) {
+	public void setValoracion(byte valoracionMedia) {
 		this.valoracionMedia = valoracionMedia;
 	}
 
@@ -54,4 +54,5 @@ public class Conductor {
 	public void setOcupado(boolean ocupado) {
 		this.ocupado = ocupado;
 	}
+
 }
