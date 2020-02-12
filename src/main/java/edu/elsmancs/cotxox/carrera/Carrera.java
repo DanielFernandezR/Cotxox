@@ -1,17 +1,19 @@
 package edu.elsmancs.cotxox.carrera;
 
 import edu.elsmancs.cotxox.conductor.Conductor;
+import edu.elsmancs.cotxox.tarifa.Tarifa;;
 
 public class Carrera {
 	
 	private String tarjetaCredito = null;
+	
 	private String origen = null;
 	private String destino = null;
 	private double distancia = 0.d;
 	private int tiempoEsperado = 0;
 	private int tiempoCarrera = 0;
 	private double costeTotal = 0.d;
-	private Conductor conductor;
+	private Conductor conductor = null;
 	
 	public Carrera(String tarjetaCredito) {
 		this.tarjetaCredito = tarjetaCredito;
@@ -67,10 +69,7 @@ public class Carrera {
 		this.conductor = conductor;
 	}
 
-	public int getCosteEsperado() {
-		
+	public double getCosteEsperado() {
+		return Tarifa.getCosteTotalEsperado(this);
 	}
-	
-	
-	
 }

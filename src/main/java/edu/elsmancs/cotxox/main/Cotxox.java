@@ -6,8 +6,8 @@ package edu.elsmancs.cotxox.main;
 import java.util.ArrayList;
 
 import edu.elsmancs.cotxox.carrera.Carrera;
-import edu.elsmancs.cotxox.conductores.Conductor;
-import edu.elsmancs.cotxox.conductores.PoolConductores;
+import edu.elsmancs.cotxox.conductor.Conductor;
+import edu.elsmancs.cotxox.conductor.PoolConductores;
 import edu.elsmancs.cotxox.tarifa.Tarifa;
 
 public class Cotxox {
