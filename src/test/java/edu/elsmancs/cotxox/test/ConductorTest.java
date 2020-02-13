@@ -21,14 +21,14 @@ public class ConductorTest {
 	public void getModeloTest() {
 		String modelo = "Mazda";
 		prueba.setModelo(modelo);
-		assertEquals("Mazda", prueba.getModelo());
+		assertEquals(modelo, prueba.getModelo());
 	}
 
 	@Test
 	public void getMatriculaTest() {
 		String matricula = "4532 FWN";
 		prueba.setMatricula(matricula);
-		assertEquals("4532 FWN", prueba.getMatricula());
+		assertEquals(matricula, prueba.getMatricula());
 	}
 	
 	@Test

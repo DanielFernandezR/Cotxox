@@ -6,8 +6,12 @@ package edu.elsmancs.cotxox.test;
 import org.junit.Test;
 
 import edu.elsmancs.cotxox.carrera.Carrera;
+import edu.elsmancs.cotxox.conductor.Conductor;
+import edu.elsmancs.cotxox.conductor.PoolConductores;
 
 import static org.junit.Assert.*;
+
+import java.util.ArrayList;
 
 import org.junit.Before;
 
@@ -64,5 +68,43 @@ public class CarreraTest {
 		prueba.setDistancia(distancia);
 		prueba.setTiempoEsperado(tiempoEsperado);
 		assertEquals(distancia * 1.35 + tiempoEsperado * 0.35, prueba.getCosteEsperado(), delta);
+	}
+	
+	@Test
+	public void getCosteTotalTest() {
+		double precioTotal = 24.95;
+		double delta = 0.001;
+		prueba.setCosteTotal(precioTotal);
+		assertEquals(precioTotal, prueba.getCosteTotal(), delta);
+	}
+	
+	@Test
+	public void getPropinaTest() {
+		int propin = 2;
+		prueba.recibirPropina(propin);
+		assertEquals(propin, prueba.getPropina());
+	}
+	
+	@Test
+	public void realizarPagoTest() {
+		double cash = 20.1;
+		double delta = 0.001;
+		prueba.realizarPago(cash);
+		assertEquals(cash, prueba.getCosteTotal(), delta);
+	}
+	
+	@Test
+	public void liberarConductorTest() {
+		ArrayList<Conductor> poolConductores = new ArrayList<>();
+		String nombre = "PEPE";
+		Conductor conductor = new Conductor(nombre);
+		poolConductores.add(conductor);
+		PoolConductores conductores = new PoolConductores(poolConductores);
+		prueba.asignarConductor(conductores);
+		
+		boolean conductorOcupado = true;
+		prueba.getConductor().setOcupado(conductorOcupado);
+		prueba.liberarConductor();
+		assertEquals(false, prueba.getConductor().isOcupado());
 	}
 }
