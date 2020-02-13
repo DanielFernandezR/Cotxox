@@ -87,13 +87,11 @@ public class Carrera {
 		this.propina = propina;
 	}
 	
-	public void realizarPago(double costeEsperado) {
-		setCosteTotal(costeEsperado);
-		
+	public void realizarPago(double pago) {
+		setCosteTotal(pago);
 	}
 
 	public void liberarConductor() {
-		// TODO Auto-generated method stub
-		
+		getConductor().setOcupado(false);
 	}
 }

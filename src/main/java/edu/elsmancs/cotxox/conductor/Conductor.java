@@ -59,7 +59,7 @@ public class Conductor {
 		for (byte valoracion:this.valoraciones) {
 			sumaValoraciones += valoracion;
 		}
-		this.valoracionMedia = sumaValoraciones /this.getNumValoraciones();
+		this.valoracionMedia = (double)sumaValoraciones /this.getNumValoraciones();
 		return this.valoracionMedia;
 		}
 
