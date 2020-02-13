@@ -15,6 +15,7 @@ public class Carrera {
 	private int tiempoCarrera = 0;
 	private double costeTotal = 0.d;
 	private Conductor conductor = null;
+	private int propina = 0;
 	
 	public Carrera(String tarjetaCredito) {
 		this.tarjetaCredito = tarjetaCredito;
@@ -76,5 +77,23 @@ public class Carrera {
 	
 	public void asignarConductor(PoolConductores conductores) {
 		setConductor(conductores.asignarConductor());
+	}
+
+	public int getPropina() {
+		return this.propina;
+	}
+
+	public void recibirPropina(int propina) {
+		this.propina = propina;
+	}
+	
+	public void realizarPago(double costeEsperado) {
+		setCosteTotal(costeEsperado);
+		
+	}
+
+	public void liberarConductor() {
+		// TODO Auto-generated method stub
+		
 	}
 }

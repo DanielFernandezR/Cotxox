@@ -105,7 +105,7 @@ public class Cotxox {
 
 		System.out.println("\n#####" + "\t Pay and Tip: \t" + "#####\n");
 
-		/*carrera.realizarPago(carrera.getCosteEsperado());
+		carrera.realizarPago(carrera.getCosteEsperado());
 		carrera.recibirPropina(1);
 		carrera.liberarConductor();
 
@@ -120,6 +120,6 @@ public class Cotxox {
 		carrera.getConductor().setValoracion((byte) 5);
 
 		System.out.println("Driver: " + carrera.getConductor().getNombre());
-		System.out.println("Stars: " + carrera.getConductor().getValoracion()); */
+		System.out.println("Stars: " + carrera.getConductor().getValoracion());
 	}
 }
